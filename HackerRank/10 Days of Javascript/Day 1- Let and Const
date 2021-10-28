@@ -1,0 +1,11 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 1: Let and Const
+// Found at https://www.hackerrank.com/challenges/js10-let-and-const/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function main() {
+    
+    const PI = Math.PI;
+    var r = readLine();
+    console.log(PI * r ** 2);
+    console.log(2 * PI * r);

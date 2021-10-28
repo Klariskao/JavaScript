@@ -1,0 +1,19 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 3: Try, Catch, and Finally
+// Found at https://www.hackerrank.com/challenges/js10-try-catch-and-finally/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function reverseString(s) {
+    try {
+        let arr = s.split("")
+        let newS = ""
+        for(let i = s.length - 1; i >= 0; i--) {
+            newS += arr[i]
+        }
+        console.log(newS)
+    }
+    catch(err) {
+        console.log(err.message)
+        console.log(s)
+    }
+}

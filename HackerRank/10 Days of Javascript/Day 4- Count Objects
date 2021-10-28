@@ -1,0 +1,14 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 4: Count Objects
+// Found at https://www.hackerrank.com/challenges/js10-count-objects/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function getCount(objects) {
+    let count = 0
+    for(let object in objects) {
+        if(objects[object]['x'] == objects[object]['y']) {
+            count++
+        }
+    }
+    return count
+}

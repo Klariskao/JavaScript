@@ -1,0 +1,8 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 7: Regular Expressions I
+// Found at https://www.hackerrank.com/challenges/js10-regexp-1/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+var regexVar = () => {
+    return /^([aeiou]).*\1$/
+}

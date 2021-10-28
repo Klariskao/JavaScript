@@ -1,0 +1,8 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 5: Arrow Functions
+// Found at https://www.hackerrank.com/challenges/js10-arrows/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+let modifyArray = (nums) => {
+    return nums.map((a) => a % 2 == 0? a * 2 : a * 3)
+    }

@@ -1,0 +1,11 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 5: Template Literals
+// Found at https://www.hackerrank.com/challenges/js10-template-literals/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function sides(literals, ...expressions) {
+    let side1 = (expressions[1] + (expressions[1] ** 2 - 16 * expressions[0]) ** 0.5) / 4
+    let side2 = (expressions[1] - (expressions[1] ** 2 - 16 * expressions[0]) ** 0.5) / 4
+    
+    return [side1, side2].sort(function(a, b){return a-b});
+}

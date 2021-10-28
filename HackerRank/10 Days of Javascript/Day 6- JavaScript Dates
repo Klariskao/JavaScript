@@ -1,0 +1,11 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 6: JavaScript Dates
+// Found at https://www.hackerrank.com/challenges/js10-date/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+var dates = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+var getDayName = (dateString) => {
+    let date = new Date(dateString)
+    return dates[date.getDay()]
+}

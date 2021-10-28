@@ -1,0 +1,14 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 4: Classes
+// Found at https://www.hackerrank.com/challenges/js10-class/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+class Polygon {
+    constructor(lengths) {
+        this.lengths = lengths
+    }
+
+    perimeter () {
+        return this.lengths.reduce((a, b) => a + b, 0)
+    }
+}

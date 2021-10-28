@@ -1,0 +1,8 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 6: Bitwise Operators
+// Found at https://www.hackerrank.com/challenges/js10-bitwise/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+let getMaxLessThanK = (n, k) => {
+    return ((k | (k - 1)) > n) ? (k - 2) : (k - 1)
+}

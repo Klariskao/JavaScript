@@ -1,0 +1,84 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 9: Binary Calculator
+// Found at https://www.hackerrank.com/challenges/js10-binary-calculator
+// --------------------------------------------------------------
+binaryCalculator.css
+
+body {
+  width: 33%;
+}
+
+#res {
+  background-color: lightgray;
+  border: solid;
+  height: 48px;
+  font-size: 20px;
+}
+
+#btns button {
+  width: 25%;
+  height: 36px;
+  font-size: 18px;
+  margin:0;
+  float: left;
+}
+
+#btn0, #btn1 {
+  background-color: lightgreen;
+  color: brown;
+}
+
+#btnClr, #btnEql {
+  background-color: darkgreen;
+  color: white;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv {
+  background-color: black;
+  color: red;
+}
+// --------------------------------------------------------------
+binaryCalculator.js
+
+function press(button) {
+    document.getElementById("res").innerHTML += button.innerHTML
+}  
+
+function equalBtn() {
+    const regex = /[\+\-\*\/]/gm
+    var operator = document.getElementById("res").innerHTML.match(regex)
+    var operands = document.getElementById("res").innerHTML.split(regex)
+    var left = parseInt(operands[0], 2)
+    var right = parseInt(operands[1], 2)
+    var result = eval(left + operator + right)
+    document.getElementById("res").innerHTML = result.toString(2)
+} 
+
+function clearBtn() {
+    document.getElementById("res").innerHTML = ""
+}
+// --------------------------------------------------------------
+index.html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Binary Calculator</title>
+    </head>
+    <body>
+        <div id="res"></div>
+        <div id="btns">
+            <button id="btn0" onclick="press(document.getElementById('btn0'))">0</button>
+            <button id="btn1" onclick="press(document.getElementById('btn1'))">1</button>
+            <button id="btnClr" onclick="clearBtn()">C</button>
+            <button id="btnEql" onclick="equalBtn()">=</button>
+            <button id="btnSum" onclick="press(document.getElementById('btnSum'))">+</button>
+            <button id="btnSub" onclick="press(document.getElementById('btnSub'))">-</button>
+            <button id="btnMul" onclick="press(document.getElementById('btnMul'))">*</button>
+            <button id="btnDiv" onclick="press(document.getElementById('btnDiv'))">/</button>
+        </div>
+        <script src="js/binaryCalculator.js" type="text/javascript"></script>
+    </body>
+</html>

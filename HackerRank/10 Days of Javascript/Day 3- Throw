@@ -1,0 +1,14 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 3: Throw
+// Found at https://www.hackerrank.com/challenges/js10-throw/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+var isPositive = (a) => {
+    if(a > 0) {
+        return "YES"
+    }
+    else if(a == 0) {
+        throw Error("Zero Error")
+    }
+    throw Error("Negative Error")
+}

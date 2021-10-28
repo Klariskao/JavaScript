@@ -1,0 +1,19 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 2: Loops
+// Found at https://www.hackerrank.com/challenges/js10-loops/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function vowelsAndConsonants(s) {
+    for(let letter of s) {
+        if("aeiou".includes(letter)){
+            console.log(letter)
+        }
+    }
+    for(let letter of s) {
+        if("aeiou".includes(letter)){
+        }
+        else {
+            console.log(letter)
+        }
+    }
+}

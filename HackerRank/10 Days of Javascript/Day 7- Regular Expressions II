@@ -1,0 +1,9 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 7: Regular Expressions II
+// Found at https://www.hackerrank.com/challenges/js10-regexp-2/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+function regexVar() {
+    var re = '^(?:Mr|Mrs|Ms|Dr|Er)\\.[a-zA-Z]+$'
+    return re
+}

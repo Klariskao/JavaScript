@@ -1,0 +1,9 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 3: Arrays
+// Found at https://www.hackerrank.com/challenges/js10-arrays/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+let getSecondLargest = (nums) => {
+    let setNums = new Set(nums)
+    return Array.from(setNums).sort(function(a, b){return a-b})[setNums.size - 2]  
+}

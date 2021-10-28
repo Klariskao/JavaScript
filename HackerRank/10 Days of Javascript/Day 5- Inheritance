@@ -1,0 +1,14 @@
+// Solution of 10 Days of JavaScript challenge on HackerRank
+// Day 5: Inheritance
+// Found at https://www.hackerrank.com/challenges/js10-inheritance/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+Rectangle.prototype.area = function() {
+    return this.w * this.h
+}
+
+class Square extends Rectangle {
+    constructor(w) {
+        super(w, w)
+    }
+}
